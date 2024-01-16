@@ -1,0 +1,321 @@
+/* Estilos para el Trabajo Práctico
+
+        selector {
+            propiedad: valor;
+        }
+
+*/
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: deepskyblue;
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    background-color: antiquewhite;
+    color: red;
+}
+
+h3 {
+    font-family: Ephesis, 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight:500;
+}
+
+p {
+    font-family:whisper;
+    font: size 50px;
+}
+
+/* Clases */
+.menu-propio {
+    color: brown;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.articulos:hover {
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.nosotros p {
+    display: inline-block;
+    font-family: whisper;
+    font-size: 30px;
+}
+.list-item {
+    list-style: none;
+}
+
+.list-item a{
+    color: blue;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.productos {
+    font-family: whisper;
+    font-size: 35px;
+}
+
+.descripcion-productos {
+    font-family: whisper;
+    font-size: 30px;
+}
+
+.accesorios {
+    font-family: whisper;
+    font-size: 25px;
+}
+
+.tipo-producto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.dimensiones {
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+}
+
+.encabezado-menu {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.centrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+.pie-de-pagina {
+    background-color: bisque;
+}
+
+.footer-h4 {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-h5 {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Productos */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-item {
+    display: flex;
+    width: 1200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.precio {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pie-grid-container {
+    display: grid;
+    border: 1px;
+    color: brown;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: 
+        "empresa copy-right"
+        "celular celular"
+        "mail mail"
+}
+
+.titulo {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    align-items: end;
+}
+
+.empresa {
+    grid-area: empresa;
+}
+
+.copy-right {
+    grid-area: copy-right;
+}
+
+.celular {
+    grid-area: celular;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.galeria-menu {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-auto-rows: 150px;
+    grid-auto-columns: 150px;
+    padding: 20px;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "historia nuestros-vinos"
+    "accesorios contacto"
+}
+
+
+.galeria-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;    
+}
+
+.galeria-item {
+    position: relative;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.nuestros-vinos {
+    grid-area: nuestros-vinos;
+}
+
+.accesorios {
+    grid-area: accesorios;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+/* FORMULARIO DE CONTACTO */
+.form-registro {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-registro h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-registro p {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+ }
+
+ .form-registro a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-registro .boton {
+    width: 100%;
+    background: #1f53c5;;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid violet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color: white;
+}
+
+/* MEDIA */
+@media (max-width: 480px) {
+
+    .imagenes {
+        border-bottom: 5px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        font-size: 16px
+    }
+    .pie-grid-container {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr); 
+        grid-template-areas: 
+        "empresa"
+        "celular"
+        "mail"
+        "copy-right";
+    }
+
+}
